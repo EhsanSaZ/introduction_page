@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "B Nazanin";
+  src: url("../font/B Nazanin+ Regular.ttf");
+}
+@font-face {
+  font-family: "B Yekan";
+  src: url("../font/BYekan.eot");
+  src: url("../font/BYekan.eot?#iefix") format("embedded-opentype"), url("../font/BYekan.ttf") format("truetype"), url("../font/BYekan.woff") format("woff");
+}
+/* line 18, ../sass/main.scss */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 26, ../sass/main.scss */
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 30, ../sass/main.scss */
+body {
+  background-color: rgba(59, 233, 89, 0.05);
+  font-family: "B Yekan";
+  font-size: 18px;
+}
+/* line 34, ../sass/main.scss */
+body nav#nav_bar {
+  background-color: #3be976;
+}
+/* line 37, ../sass/main.scss */
+body footer#_footer {
+  background-color: #3be976;
+}
+
+/* line 41, ../sass/main.scss */
+.first_head {
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 46, ../sass/main.scss */
+.background-color {
+  background-color: #c5f8ce;
+  border-radius: 15px;
+}
+/* line 48, ../sass/main.scss */
+.background-color #row1_col2 {
+  background-color: #a0f4ae;
+}
+
+/* line 53, ../sass/main.scss */
+.carousel-indicators .active {
+  background-color: black;
+}
+/* line 56, ../sass/main.scss */
+.carousel-indicators li {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 60, ../sass/main.scss */
+.left_a_carousel {
+  background-color: #52ec6c;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* line 65, ../sass/main.scss */
+.right_a_carousel {
+  background-color: #52ec6c;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+/* line 82, ../sass/main.scss */
+.swingimage {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 2s ease-in-out forwards infinite;
+  animation: swinging 2s ease-in-out forwards infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+/* line 106, ../sass/main.scss */
+.face:hover {
+  animation: shake 0.8s ease-in-out forwards infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "B Nazanin";
+  src: url('../font/B Nazanin+ Regular.ttf');
+}
+@font-face {
+  font-family:  "B Yekan";
+  src: url('../font/BYekan.eot');
+  src: url('../font/BYekan.eot?#iefix') format('embedded-opentype'),
+  url('../font/BYekan.ttf')format('truetype'),
+  url('../font/BYekan.woff') format('woff');
+}
+$bgc:rgb(59,233,89);
+
+@mixin bg-color{
+  background-color: lighten($bgc,30%);
+  border-radius: 15px;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+ body{
+   background-color: rgba($bgc,0.05);
+   font-family:  "B Yekan";
+   font-size: 18px;
+   nav#nav_bar{
+     background-color: adjust_hue($bgc,10deg);
+   }
+   footer#_footer{
+     background-color:adjust_hue($bgc,10deg);
+   }
+ }
+.first_head{
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-color{
+  @include bg-color;
+  #row1_col2{
+    background-color: lighten($bgc,22%);
+  }
+}
+.carousel-indicators  {
+  .active{
+    background-color:black;
+  }
+  li{
+    border-color:rgba(0,0,0,0.5);
+  }
+}
+.left_a_carousel{
+  background-color:  lighten($bgc,5%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.right_a_carousel{
+  background-color: lighten($bgc,5%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@-webkit-keyframes swinging{
+  0%{-webkit-transform: rotate(10deg);}
+  50%{-webkit-transform: rotate(-10deg)}
+  100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+  0%{transform: rotate(10deg);}
+  50%{transform: rotate(-10deg)}
+  100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 2s ease-in-out forwards infinite;
+  animation: swinging 2s ease-in-out forwards infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.face:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
