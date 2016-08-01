@@ -9,8 +9,8 @@
   url('../font/BYekan.ttf')format('truetype'),
   url('../font/BYekan.woff') format('woff');
 }
-$bgc:rgb(59,233,89);
-
+$bgc:rgb(57,62,67);
+$my_green:rgb(52,175,35);
 @mixin bg-color{
   background-color: lighten($bgc,30%);
   border-radius: 15px;
@@ -57,15 +57,13 @@ $bgc:rgb(59,233,89);
     border-color:rgba(0,0,0,0.5);
   }
 }
-.left_a_carousel{
-  background-color:  lighten($bgc,5%);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-.right_a_carousel{
-  background-color: lighten($bgc,5%);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+.nav-foot-color{
+  a{
+    color: $my_green;
+  }
+  p{
+    color: white;
+  }
 }
 @-webkit-keyframes swinging{
   0%{-webkit-transform: rotate(10deg);}

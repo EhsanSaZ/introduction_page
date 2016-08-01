@@ -24,17 +24,17 @@
 
 /* line 30, ../sass/main.scss */
 body {
-  background-color: rgba(59, 233, 89, 0.05);
+  background-color: rgba(57, 62, 67, 0.05);
   font-family: "B Yekan";
   font-size: 18px;
 }
 /* line 34, ../sass/main.scss */
 body nav#nav_bar {
-  background-color: #3be976;
+  background-color: #393c43;
 }
 /* line 37, ../sass/main.scss */
 body footer#_footer {
-  background-color: #3be976;
+  background-color: #393c43;
 }
 
 /* line 41, ../sass/main.scss */
@@ -46,12 +46,12 @@ body footer#_footer {
 
 /* line 46, ../sass/main.scss */
 .background-color {
-  background-color: #c5f8ce;
+  background-color: #818b94;
   border-radius: 15px;
 }
 /* line 48, ../sass/main.scss */
 .background-color #row1_col2 {
-  background-color: #a0f4ae;
+  background-color: #6d7680;
 }
 
 /* line 53, ../sass/main.scss */
@@ -63,18 +63,13 @@ body footer#_footer {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 60, ../sass/main.scss */
-.left_a_carousel {
-  background-color: #52ec6c;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+/* line 61, ../sass/main.scss */
+.nav-foot-color a {
+  color: #34af23;
 }
-
-/* line 65, ../sass/main.scss */
-.right_a_carousel {
-  background-color: #52ec6c;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+/* line 64, ../sass/main.scss */
+.nav-foot-color p {
+  color: white;
 }
 
 @-webkit-keyframes swinging {
@@ -99,7 +94,7 @@ body footer#_footer {
     transform: rotate(10deg);
   }
 }
-/* line 82, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .swingimage {
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
@@ -109,21 +104,21 @@ body footer#_footer {
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
   }
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
   30%, 50%, 70% {
-    transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
   }
   40%, 60% {
-    transform: translate3d(3px, 0, 0);
+    transform: translate3d(4px, 0, 0);
   }
 }
-/* line 106, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .face:hover {
-  animation: shake 0.8s ease-in-out forwards infinite;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
