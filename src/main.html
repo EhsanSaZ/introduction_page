@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="..\style\stylesheets\main.css">
     
 </head>
-<body  class="f" >
+<body   >
 
     <!-- nav -->
     <nav class="navbar navbar-fixed-top nav-foot-color"  id="nav_bar">
@@ -34,6 +34,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a id="nav_a_1" href="#connect_to_us">ارتباط با ما</a></li>
+                    <li><a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a></li>
                     <li><a  id="nav_a_2" href="#downloads">دانلود</a></li>
                     <li><a  id="nav_a_3" href="#why_us">چرا ما</a></li>
                     <li><a id="nav_a_4"href="#describe">درباره</a></li>
@@ -46,7 +47,7 @@
 
 
     <!--head -->
-    <div class="container-fluid first_head text-center" id="fisrt_container" >
+    <div class="container-fluid  text-center first_head" id="fisrt_container" >
         <br>
         <h3 style="font-size: xx-large;padding: 20px"><b>SOME WORD ABOUT APP AND ADS</b></h3>
     </div>
@@ -137,24 +138,49 @@
 
     </div>
         <!--links to download-->
-    <div class="container background-color grow" id="downloads" >
+    <div class="container background-color grow" id="downloads" style="direction: rtl">
 
         <h2 class="text-center"  >دانلود</h2>
 
-        <div  style="padding: 10px ;direction: rtl;">
-                <a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 1</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 2</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 3</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 4</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 5</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 6</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 7</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 8</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 9</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 10</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 11</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 12</a>
-            <br><a href="http://dl2.soft98.ir/soft/t/Telegram.Desktop.0.9.56.rar"> نسخه 13</a>
+        <ul class="nav nav-tabs right-to-left" >
+            <li class="active"><a data-toggle="tab" href="#desktop">دسکتاپ</a></li>
+            <li><a data-toggle="tab" href="#mobile-phones">تلفن همراه</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="desktop" class="tab-pane fade in active">
+                <h3>دسکتاپ</h3>
+                <div class="row ">
+                    <div class="col-sm-11"></div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-info btn-lg btn-block" role="button">Windows Phone</a>
+                        <br>
+                        <a class="btn btn-info btn-lg btn-block" role="button">Android</a>
+                        <br>
+                        <a class="btn btn-info btn-lg btn-block" role="button">IOS</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-phones" class="tab-pane fade">
+                <h3>تلفن همراه</h3>
+                <div class="row">
+                    <div class="col-sm-11"></div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-info btn-lg btn-block" role="button">Windows Phone</a>
+                        <br>
+                        <a class="btn btn-info btn-lg btn-block" role="button">Android</a>
+                        <br>
+                        <a class="btn btn-info btn-lg btn-block" role="button">IOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class=" container background-color grow" id="more_and_more" >
+        <h2 class="text-center" >بیشتر و بیشتر</h2>
+        <div >
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         <br>
     </div>
@@ -173,15 +199,13 @@
         <!--footer-->
     <footer class="navbar-default navbar-fixed-bottom nav-foot-color" id="_footer">
             <div class="container-fluid text-center ">
-
                     <p style="direction: rtl;">تمامی حقوق سایت متعلق به ... می باشد.</p>
                     <a id="foorer_a_1" href="#fisrt_container">خانه</a>
                     <a id="foorer_a_2"href="#describe">درباره</a>
                     <a id="foorer_a_3"href="#why_us">چرا ما</a>
                     <a id="foorer_a_4"href="#downloads">دانلود</a>
+                    <a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a>
                     <a id="foorer_a_5"href="#connect_to_us">ارتباط با ما</a>
-
-
             </div>
     </footer>
 

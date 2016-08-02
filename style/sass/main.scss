@@ -15,6 +15,7 @@ $bgc:rgb(57,62,67);
 $font_color:white;
 $my_green:rgb(52,175,35);
 $light_green:rgb(241,248,233);
+$text-color:#2c3e50;
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,14 +29,13 @@ $light_green:rgb(241,248,233);
   flex-direction: column;
 }
 
- body{
+body{
    background: url("../images/bg-download.jpg");;
    background-attachment: fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   //background-color:#2c3e50;
    font-family:  "B Yekan";
    font-size: 18px;
    nav#nav_bar{
@@ -43,8 +43,16 @@ $light_green:rgb(241,248,233);
    }
    footer#_footer{
      background-color:adjust_hue($bgc,10deg);
-   }
- }
+     opacity: 0.6;
+     &:hover{
+       opacity: 0.8;
+     }
+   } 
+}
+ 
+.color{
+  color:$text-color ;
+}
 body hr{
   width:90%;
   height: 1px;
@@ -61,6 +69,7 @@ body > div
 }
 .first_head{
   background-color: adjust_hue($bgc,10deg);
+  opacity: 0.6;
   h3{
     color: $font_color;
   }
@@ -68,7 +77,7 @@ body > div
 .background-color{
   background-color: $font_color;
   h2{
-    background-color: #2c3e50 ;
+    background-color: $text-color ;
     color: $font_color;
     padding: 20px;
   }
@@ -90,7 +99,9 @@ body > div
     color: white;
   }
 }
-
+.right-to-left li {
+  float: right;
+}
 #describe {
   &:hover{ border-left: 4px solid lighten($my_green,20% );
     border-right: 4px solid lighten($my_green,20% );}
