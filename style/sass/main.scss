@@ -83,6 +83,13 @@ body > div
   }
 
 }
+
+.carousel-content {
+  color:black;
+  display:flex;
+  align-items:center;
+}
+
 .carousel-indicators  {
   .active{
     background-color:black;
@@ -111,6 +118,10 @@ body > div
   &:hover{border-left: 4px solid lighten($my_green,20% );
   border-right: 4px solid lighten($my_green,20% );
   }
+}
+#more_and_more{
+  &:hover{ border-left: 4px solid lighten($my_green,20% );
+    border-right: 4px solid lighten($my_green,20% );}
 }
 #downloads{
   &:hover{ border-left: 4px solid lighten($my_green,20% );

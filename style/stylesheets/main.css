@@ -91,53 +91,66 @@ body > div {
 }
 
 /* line 87, ../sass/main.scss */
+.carousel-content {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+/* line 94, ../sass/main.scss */
 .carousel-indicators .active {
   background-color: black;
 }
-/* line 90, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .carousel-indicators li {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 95, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .nav-foot-color a {
   color: #34af23;
 }
-/* line 98, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .nav-foot-color p {
   color: white;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .right-to-left li {
   float: right;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 #describe:hover {
   border-left: 4px solid #6ade5a;
   border-right: 4px solid #6ade5a;
 }
 
-/* line 111, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 #connect_to_us:hover {
   border-left: 4px solid #6ade5a;
   border-right: 4px solid #6ade5a;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
+#more_and_more:hover {
+  border-left: 4px solid #6ade5a;
+  border-right: 4px solid #6ade5a;
+}
+
+/* line 127, ../sass/main.scss */
 #downloads:hover {
   border-left: 4px solid #6ade5a;
   border-right: 4px solid #6ade5a;
 }
 
-/* line 120, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 #why_us:hover {
   border-left: 4px solid #6ade5a;
   border-right: 4px solid #6ade5a;
 }
 
-/* line 123, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .grow:hover {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
@@ -167,7 +180,7 @@ body > div {
     transform: rotate(10deg);
   }
 }
-/* line 141, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .swingimage {
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
@@ -189,7 +202,7 @@ body > div {
     transform: translate3d(4px, 0, 0);
   }
 }
-/* line 165, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .face:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
