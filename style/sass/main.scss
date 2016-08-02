@@ -10,11 +10,9 @@
   url('../font/BYekan.woff') format('woff');
 }
 $bgc:rgb(57,62,67);
+$font_color:white;
 $my_green:rgb(52,175,35);
-@mixin bg-color{
-  background-color: lighten($bgc,30%);
-  border-radius: 15px;
-}
+$light_green:rgb(241,248,233);
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,7 +26,7 @@ $my_green:rgb(52,175,35);
   flex-direction: column;
 }
  body{
-   background-color: rgba($bgc,0.05);
+   background-color:#2c3e50;
    font-family:  "B Yekan";
    font-size: 18px;
    nav#nav_bar{
@@ -39,15 +37,14 @@ $my_green:rgb(52,175,35);
    }
  }
 .first_head{
-  background-image: url("../images/1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: adjust_hue($bgc,10deg);
+  h3{
+    color: $font_color;
+  }
 }
 .background-color{
-  @include bg-color;
-  #row1_col2{
-    background-color: lighten($bgc,22%);
-  }
+  background-color: $light_green;
+
 }
 .carousel-indicators  {
   .active{
@@ -64,6 +61,39 @@ $my_green:rgb(52,175,35);
   p{
     color: white;
   }
+}
+#test{
+  border: 5px solid yellow;
+}
+
+#describe {
+    border-left: 5px solid yellow;
+    border-top: 5px solid yellow;
+    border-right: 5px solid yellow;
+
+}
+#connect_to_us {
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
+  border-bottom: 5px solid yellow;
+}
+#downloads{
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
+}
+#why_us{
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
+}
+body hr{
+  width:90%;
+  height: 1px;
+  background-color:$my_green;
+  color:$my_green;
+  border: 0 none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
 }
 @-webkit-keyframes swinging{
   0%{-webkit-transform: rotate(10deg);}
