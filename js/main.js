@@ -15,7 +15,13 @@ $(document).ready(function(){
        var mrg_top_row1_col2_p =$("#row1_col2").height()-$("#row1_col2_p").height();
        $("#row1_col2_p").css("margin-top",mrg_top_row1_col2_p/2);
     });
-    
+    var mrg_top_row1_col2_p =$("#me").height()-$("#me").height();
+    $("#me,").css("margin-top",mrg_top_row1_col2_p/2);
+
+    $window.bind('resize', function() {
+        var mrg_top_row1_col2_p =$("#me").height()-$("#me").height();
+        $("#me").css("margin-top",mrg_top_row1_col2_p/2);
+    });
     //--------------------------------------
     /*$(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {

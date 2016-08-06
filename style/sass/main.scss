@@ -16,6 +16,7 @@ $font_color:white;
 $my_green:rgb(52,175,35);
 $light_green:rgb(241,248,233);
 $text-color:#2c3e50;
+$banner_bgc:adjust_hue($bgc,10deg);
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,9 +44,8 @@ body{
    }
    footer#_footer{
      background-color:adjust_hue($bgc,10deg);
-     opacity: 0.6;
      &:hover{
-       opacity: 0.8;
+       background-color: rgba($banner_bgc,0.8);
      }
    } 
 }
@@ -68,8 +68,6 @@ body > div
   transition:all 0.3s ease;
 }
 .first_head{
-  background-color: adjust_hue($bgc,10deg);
-  opacity: 0.6;
   h3{
     color: $font_color;
   }
@@ -178,4 +176,49 @@ body > div
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.effect6
+{
+  position:relative;
+  -webkit-box-shadow:0 10px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 10px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 10px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.icon_class{
+  color: adjust_hue($my_green,50);
+}
+.font{
+  &:hover{
+    font-size: larger;
+    cursor:pointer;
+  }
+}
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel-control {
+    z-index: 2;
+  }
 }
