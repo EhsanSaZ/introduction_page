@@ -3,6 +3,7 @@
 
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,14 +15,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="../style/font-awesome-4.6.3/css/font-awesome.css">
+
+
+
+    <link rel="stylesheet" href="../style/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../style/stylesheets/main.css">
     
 </head>
-<body   >
+<body >
+<div id="load">
 
+</div>
+
+<div id="contents" class="content" style="display: none">
     <!-- nav -->
-    <nav class="navbar navbar-fixed-top nav-foot-color"  id="nav_bar">
+    <nav class="navbar navbar-fixed-top nav-foot-color element-animation"  id="nav_bar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,14 +37,14 @@
                     <span class="icon-bar" style="background-color: #0f0f0f"></span>
                     <span class="icon-bar" style="background-color: #0f0f0f"></span>
                 </button>
-                <p class="element-animation"> <img src="..\style\images\nasim.png"  width="50" height="50"  class="swingimage"> <span style="color: #6ade5a">نسیم</span>،برنامه ای برای گسترش ارتباطات شخصی و اجتماعی</p>
+                <p > <img src="..\style\images\nasim.png"  width="50" height="50"  class="swingimage"> <span style="color: #6ade5a">نسیم</span>،برنامه ای برای گسترش ارتباطات شخصی و اجتماعی</p>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a id="nav_a_1" href="#connect_to_us">ارتباط با ما</a></li>
-                    <li><a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a></li>
+                    <li><a  id="nav_a_2" href="#features">ویژگی های نسیم</a></li>
                     <li><a  id="nav_a_2" href="#downloads">دانلود</a></li>
-                    <li><a  id="nav_a_3" href="#why_us">چرا ما</a></li>
+                    <li><a  id="nav_a_3" href="#why_us">چرا نسیم</a></li>
                     <li><a id="nav_a_4"href="#describe">نسیم در یک نگاه</a></li>
                     <li class="active"><a id="nav_a_5"href="#fisrt_container">خانه</a></li>
                 </ul>
@@ -49,11 +57,11 @@
     <div class="container-fluid  text-center first_head " id="fisrt_container" >
 
         <div class="container effect6" style="padding: 0px">
-            <img src="../style/images/banner_top.jpg" class="img-responsive  ">
+            <img src="../style/images/banner_top.jpg" class="img-responsive ">
         </div>
 
     </div>
-        <!-- describe -->
+    <!-- describe -->
     <div class="container background-color div-border hvr-reveal grow " id="describe"  >
 
         <h2 class="text-center" >نسیم در یک نگاه</h2>
@@ -65,32 +73,34 @@
 
             <div class="col-sm-4 " id="row1_col2" style="direction: rtl;margin: auto" >
 
-                    <div id="row1_col2_p">
-                        <p style="color: rgb(57,62,67);" class="font">
+                <div id="row1_col2_p">
+                    <p style="color: rgb(57,62,67);" class="font">
                         <i class="fa fa-exchange icon_class fa-lg" aria-hidden="true"></i> <b>سرعت </b> در انتقال پیام و فایل
                     </p>
-                        <p style="color: rgb(57,62,67);" class="font">
-                            <i class="fa fa-comments icon_class fa-lg" aria-hidden="true"></i> <b>محاورات </b> گروهی و شخصی
-                        </p>
-                        <p style="color: rgb(57,62,67);" class="font">
-                            <i class="fa fa-user-secret icon_class fa-lg" aria-hidden="true"></i>ارتباط <b>امن</b> و رمزنگاری شده
-                        </p>
-                        <p style="color: rgb(57,62,67);" class="font">
-                            <i class="fa fa-mobile  icon_class fa-2x" aria-hidden="true"></i>  پشتیبانی از  <b>تمامی</b>دستگاه ها
-                        </p>
-                    </div>
+                    <p style="color: rgb(57,62,67);" class="font">
+                        <i class="fa fa-comments icon_class fa-lg" aria-hidden="true"></i> <b>محاورات </b> گروهی و شخصی
+                    </p>
+                    <p style="color: rgb(57,62,67);" class="font">
+                        <i class="fa fa-user-secret icon_class fa-lg" aria-hidden="true"></i>ارتباط <b>امن</b> و رمزنگاری شده
+                    </p>
+                    <p style="color: rgb(57,62,67);" class="font">
+                        <i class="fa fa-mobile  icon_class fa-2x" aria-hidden="true"></i>  پشتیبانی از  <b>تمامی</b>دستگاه ها
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-4 " >
+            <div class="col-sm-4 center-block" >
                 <a href="https://play.google.com/store/apps/details?id=ir.nasim" target="_blank" ><img src="../style/images/en_badge_web_generic.png"class="img-responsive" style="height:80px"></a>
                 <a href="https://uw.cafebazaar.ir/app/ir.nasim/?l=fa#dlAppModal" target="_blank" ><img src="../style/images/badge-g-fullsize.png" class="img-responsive" style="height:80px"></a>
             </div>
         </div>
         <br>
     </div>
-        <!-- why_us -->
+    <!-- why_us -->
     <div class="container text-center  background-color grow" id="why_us">
-        <h2>چرا ما؟</h2>
-        <div class="col-sm-4 "></div>
+        <h2>چرا نسیم؟</h2>
+        <div class="col-sm-4 ">
+
+        </div>
         <div class="col-sm-4 ">
             <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel" data-interval="2000" style="margin-left: 0 px;">
 
@@ -150,58 +160,172 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 "></div>
+        <div class="col-sm-4 ">
 
-
+        </div>
     </div>
+
         <!--links to download-->
     <div class="container background-color grow" id="downloads" style="direction: rtl">
 
-        <h2 class="text-center"  >دانلود</h2>
+            <h2 class="text-center"  >دانلود</h2>
 
-        <ul class="nav nav-tabs right-to-left" >
-            <li class="active"><a data-toggle="tab" href="#desktop">دسکتاپ</a></li>
-            <li><a data-toggle="tab" href="#mobile-phones">تلفن همراه</a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="desktop" class="tab-pane fade in active">
-                <h3>دسکتاپ</h3>
-                <div class="row ">
-                    <div class="col-sm-11"></div>
-                    <div class="col-sm-2">
-                        <a class="btn btn-info btn-lg btn-block" role="button">Windows Phone</a>
-                        <br>
-                        <a class="btn btn-info btn-lg btn-block" role="button">Android</a>
-                        <br>
-                        <a class="btn btn-info btn-lg btn-block" role="button">IOS</a>
+            <ul class="nav nav-tabs right-to-left" >
+                <li class="active"><a data-toggle="tab" href="#desktop">دسکتاپ</a></li>
+                <li><a data-toggle="tab" href="#mobile-phones">تلفن همراه</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="desktop" class="tab-pane fade in active">
+                    <h3>دسکتاپ</h3>
+                    <div class="row">
+                        <div class="col-sm-2 center-block">
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">Windows Phone</a>
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">Android</a>
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">IOS</a>
+                        </div>
+
+                        <div class="col-sm-10">
+                            <img src="../style/images/laptops.png"  class=" center-block" style="max-width: 300px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile-phones" class="tab-pane fade">
+                    <h3>تلفن همراه</h3>
+                    <div class="row">
+                        <div class="col-sm-2 center-block">
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">Windows Phone</a>
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">Android</a>
+                            <a class="btn btn-info btn-lg btn-block" role="button" style="margin-bottom: 20px">IOS</a>
+                        </div>
+                        <div class="col-sm-10 text-center">
+                            <img src="../style/images/mobiles.png"  class=" center-block" style="max-width: 300px;">
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div id="mobile-phones" class="tab-pane fade">
-                <h3>تلفن همراه</h3>
-                <div class="row">
-                    <div class="col-sm-11"></div>
-                    <div class="col-sm-2">
-                        <a class="btn btn-info btn-lg btn-block" role="button">Windows Phone</a>
-                        <br>
-                        <a class="btn btn-info btn-lg btn-block" role="button">Android</a>
-                        <br>
-                        <a class="btn btn-info btn-lg btn-block" role="button">IOS</a>
+            <br>
+        </div>
+        <!--more and more-->
+    <div class="container   background-color grow " id="features">
+        <h2 class="text-center">ویژگی های نسیم</h2>
+        <div id="carousel-example-generic" class="carousel slide " data-ride="carousel" data-interval="2500" style="margin-left: 0 px;">
+
+            <ol class="carousel-indicators" >
+                <li data-target="#carousel-example-generic"  data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic"  data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic"  data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic"  data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic"  data-slide-to="4"></li>
+
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox" style="direction: rtl" >
+                <div class="item active">
+                    <div class="col-sm-4">
+                        <img src="../style/images/008.jpg" class="center-block shadow" >
                     </div>
+                    <div class="col-sm-8">
+                        <h1><i class="fa fa-comments-o icon_class" aria-hidden="true"></i>
+                            اطلاع رسانی و تعامل<i class="fa fa-comments-o icon_class" aria-hidden="true"></i></h1>
+                        <p >
+                            ارائه پیشنهاد توسط کارکنان در هر لحظه و هرکجا از طریق تلفن همراه<br>
+                            ارائه پیشنهاد بهبود با فرمت متن، عکس، فیلم و صوت<br>
+                            نقد و بررسی پیشنهادهای ارائه شده توسط کارکنان مختلف در لحظه<br>
+                            جلب مشارکت و نظرخواهی از همکاران بوسیله رای گیری آسان در مورد هر پیشنهاد<br>
+                        </p>
+                    </div>
+
                 </div>
+
+                <div class="item">
+                    <div class="col-sm-4">
+                        <img src="../style/images/009.jpg" class="center-block shadow" >
+                    </div>
+                    <div class="col-sm-8">
+                        <h1><i class="fa fa-leanpub icon_class" aria-hidden="true"></i>
+                            آموزش و یادگیری<i class="fa fa-leanpub icon_class" aria-hidden="true"></i></h1>
+                        <p>
+                            ایجاد کانالهای مختلف آموزشی<br>
+                            تشکیل گروه های اشتراک دانش<br>
+                            یادگیری تعاملی و امکان تعامل مربی و کارمند<br>
+                            یادگیری در همه جا از طریق موبایل<br>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="col-sm-4">
+                        <img src="../style/images/005.jpg" class="center-block shadow" >
+                    </div>
+                    <div class="col-sm-8">
+                        <h1><i class="fa fa-share-alt icon_class" aria-hidden="true"></i>مشارکت سازمانی
+                            <i class="fa fa-share-alt icon_class" aria-hidden="true"></i></h1>
+                        <p>
+                            ارتباط آسان و لحظه ای با امکان گفتگوی مجازی و ارسال عکس، فیلم و فایل<br>
+                            اطلاع رسانی تعاملی برنامه ها و رویدادهای مختلف به کارکنان بصورت دسته جمعی یا فردی در فرمتهای مختلف متنی، صوتی و تصویری<br>
+                            مدیریت ارتباطات از طریق مدیریت سطوح دسترسی<br>
+                            ارتباط همیشگی کمیته های خبرگان سازمان در اتاق های گفتگوی مجازی<br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="col-sm-4">
+                        <img src="../style/images/002.jpg" class="center-block shadow" >
+
+                    </div>
+                    <div class="col-sm-8">
+                        <h1><i class="fa fa-cogs icon_class" aria-hidden="true"></i>
+                            ویژگی های فنی<i class="fa fa-cogs icon_class" aria-hidden="true"></i> </h1>
+                        <p >
+                            معماری نرم افزار بصورت الستیک و توسعه پذیر<br>
+                            ارائه خدمات بصورت PAAS برای ارائه قابلیت گفتگو در اپلیکیشن های مختلف دیگر<br>
+                            قابلیت تعامل با دیگر سرویس ها و شبکه های اجتماعی از طریق API<br>
+                            پشتیبانی و سازگاری با LDAP , active directory<br>
+                            استفاده از سامانه ذخیره سازی فایل توزیع شده با پشتیبانی از: high availability , auto sharing<br>
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="col-sm-4">
+                        <img src="../style/images/004.jpg" class="center-block shadow" >
+                    </div>
+                    <div class="col-sm-8">
+                        <h1><i class="fa fa-unlock-alt icon_class" aria-hidden="true"></i>ویژگی های امنیتی
+                            <i class="fa fa-unlock-alt icon_class" aria-hidden="true"></i></h1>
+                        <p>
+                            رمزنگاری پیام ها بین کلاینتها و سرور برای جلوگیری از شنود<br>
+                            استفاده از از پروتکل TLS به همراه WAF برای ارتباط بین کلاینت و سرور<br>
+                            انتقال اطلاعات از طریق پروتکل باینری و رمزنگاری شده<br>
+                            نظارت امنیتی توسط سیستم SOC برای شناسایی رفتارهای نامعمول و جلوگیری از حملات<br>
+                            دارای قابلیت OTR با پشتیبانی از end-to-end encryption بهره گیری از تستهای نفوذ دوره ای و استاندارد<br>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+
+                <a href="#carousel-example-generic"  class=" controllers" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel-example-generic"  class=" controllers" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
         <br>
     </div>
 
-    <div class=" container background-color grow" id="more_and_more" >
-        <h2 class="text-center" >بیشتر و بیشتر</h2>
-        <div >
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
-        <br>
-    </div>
-
+    <!-- contect to us -->
     <div class=" container background-color grow" id="connect_to_us" >
         <h2 class="text-center" >ارتباط با ما</h2>
         <div style="direction: rtl;" >
@@ -216,24 +340,24 @@
             <h1>سایت </h1>
             <p><a href="www.elenoon.ir" target="_blank" >www.elenoon.ir</a></p>
         </div>
-
     </div>
-
-        <br>
-        <!--footer-->
+    <br>
+    <!--footer-->
     <footer class="navbar-default  nav-foot-color" id="_footer">
-            <div class="container-fluid text-center ">
-                    <p style="direction: rtl;">تمامی حقوق سایت متعلق به ... می باشد.</p>
-                    <a id="foorer_a_1" href="#fisrt_container">خانه</a>
-                    <a id="foorer_a_2"href="#describe">درباره</a>
-                    <a id="foorer_a_3"href="#why_us">چرا ما</a>
-                    <a id="foorer_a_4"href="#downloads">دانلود</a>
-                    <a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a>
-                    <a id="foorer_a_5"href="#connect_to_us">ارتباط با ما</a>
-            </div>
+        <div class="container-fluid text-center ">
+            <p style="direction: rtl;">تمامی حقوق سایت متعلق به ... می باشد.</p>
+            <a id="foorer_a_1" href="#fisrt_container">خانه</a>
+            <a id="foorer_a_2"href="#describe">درباره</a>
+            <a id="foorer_a_3"href="#why_us">چرا ما</a>
+            <a id="foorer_a_4"href="#downloads">دانلود</a>
+            <a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a>
+            <a id="foorer_a_5"href="#connect_to_us">ارتباط با ما</a>
+        </div>
     </footer>
-
+    </div>
 
 </body>
 <script src="..\js\main.js"></script>
+
+
 </html>

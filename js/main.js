@@ -2,7 +2,6 @@
  * Created by ehsan on 7/25/2016.
  */
 $(document).ready(function(){
-    
     var  $window = $(window);
 
     //----------------------------------------
@@ -15,7 +14,7 @@ $(document).ready(function(){
        var mrg_top_row1_col2_p =$("#row1_col2").height()-$("#row1_col2_p").height();
        $("#row1_col2_p").css("margin-top",mrg_top_row1_col2_p/2);
     });
-    //--------------------------------------
+
     /*$(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -50,3 +49,17 @@ $(document).ready(function(){
         } // End if
     });
 });
+//--------------------------------------
+
+document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+        document.getElementById('contents').style.display="none";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+            document.getElementById('interactive');
+            document.getElementById('load').style.display="none";
+            document.getElementById('contents').style.display="block";
+        },1000);
+    }
+}
