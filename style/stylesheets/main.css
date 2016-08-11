@@ -152,6 +152,8 @@ body > div {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
   background-color: #f1f8e9;
 }
 
@@ -177,7 +179,7 @@ body > div {
     transform: rotate(10deg);
   }
 }
-/* line 154, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .swingimage {
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
@@ -199,7 +201,7 @@ body > div {
     transform: translate3d(4px, 0, 0);
   }
 }
-/* line 178, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .face:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
@@ -207,7 +209,7 @@ body > div {
   perspective: 1000px;
 }
 
-/* line 185, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .effect6 {
   position: relative;
   -webkit-box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -215,34 +217,34 @@ body > div {
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* line 192, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .icon_class {
   color: #00caff;
 }
 
-/* line 196, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .font:hover {
   font-size: larger;
   cursor: pointer;
 }
 
-/* line 204, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 207, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 212, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 217, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -250,12 +252,12 @@ body > div {
   left: 0;
   transform: translate3d(0, 0, 0);
 }
-/* line 225, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
 
-/* line 230, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .element-animation {
   animation: animationFrames ease-in-out 1s;
   animation-iteration-count: 1;
@@ -334,7 +336,7 @@ body > div {
     -ms-transform: translate(0px, 0px);
   }
 }
-/* line 308, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 #load {
   width: 100%;
   height: 100%;
@@ -343,7 +345,7 @@ body > div {
   background: url("../images/default.svg") no-repeat center center;
 }
 
-/* line 317, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .controllers:link, .controllers:visited {
   background-color: white;
   color: #2c3e50;
@@ -351,13 +353,13 @@ body > div {
   border: 1px solid #2c3e50;
   display: inline-block;
 }
-/* line 324, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 .controllers:hover, .controllers:active {
   background-color: #34af23;
   color: white;
 }
 
-/* line 330, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .shadow {
   -moz-box-shadow: 3px 0px 5px #000000;
   -webkit-box-shadow: 3px 0px 5px #000000;

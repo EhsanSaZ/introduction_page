@@ -137,6 +137,9 @@ body > div
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+
   background-color: $light_green;
 }
 @-webkit-keyframes swinging{
