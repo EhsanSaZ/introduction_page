@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 <head>
 
@@ -10,12 +13,13 @@
     <title>نسیم</title>
 
     <link rel="icon" href="..\style\images\nasim.png">
-   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-
+    <link rel="stylesheet" href="../style/stylesheets/loader_css/css/main.css">
+    <script src="../js/loader_js/js/vendor/modernizr-2.6.2.min.js"></script>
 
 
     <link rel="stylesheet" href="../style/font-awesome-4.6.3/css/font-awesome.min.css">
@@ -23,7 +27,10 @@
     
 </head>
 <body >
-<div id="load">
+<div id="loader-wrapper" >
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
 
 </div>
 
@@ -41,12 +48,12 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a id="nav_a_1" href="#connect_to_us">ارتباط با ما</a></li>
-                    <li><a  id="nav_a_2" href="#features">ویژگی های نسیم</a></li>
-                    <li><a  id="nav_a_2" href="#downloads">دانلود</a></li>
-                    <li><a  id="nav_a_3" href="#why_us">چرا نسیم</a></li>
-                    <li><a id="nav_a_4"href="#describe">نسیم در یک نگاه</a></li>
-                    <li class="active"><a id="nav_a_5"href="#fisrt_container">خانه</a></li>
+                    <li><a href="#connect_to_us">ارتباط با ما</a></li>
+                    <li><a href="#features">ویژگی های نسیم</a></li>
+                    <li><a href="#downloads">دانلود</a></li>
+                    <li><a href="#why_us">چرا نسیم</a></li>
+                    <li><a href="#describe">نسیم در یک نگاه</a></li>
+                    <li class="active"><a href="#fisrt_container">خانه</a></li>
                 </ul>
             </div>
         </div>
@@ -102,7 +109,7 @@
 
         </div>
         <div class="col-sm-4 ">
-            <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel" data-interval="2000" style="margin-left: 0 px;">
+            <div id="myCarousel" class="carousel slide carousel-fade " data-ride="carousel" data-interval="3000" style="margin-left: 0 px;">
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators" >
@@ -117,41 +124,41 @@
                 <div class="carousel-inner" role="listbox"  >
 
 
-                    <div class="item active">
-                        <h1>رابط کاربری جذاب  </h1>
+                    <div class="item active" >
+                        <h1 >رابط کاربری جذاب  </h1>
                         <img src="../style/images/User_Experience_Design-512.png" class="center-block" style="height:250px;">
                         <p>رابط کاربری بومی ما تجربه کاربری عالی را به کاربران میدهد.</p>
                         <br><br>
                     </div>
 
-                    <div class="item">
-                        <h1 >پنل مدیریت کارآمد</h1>
+                    <div class="item " >
+                        <h1  >پنل مدیریت کارآمد</h1>
                         <img src="../style/images/admin-icon.png" class="center-block" style="height:250px;">
                         <p >پنل مدیریت قوی که امکان مدیریت کارآمد برنامه را ایجاد میکند.</p>
                         <br><br>
                     </div>
 
-                    <div class="item">
-                        <h1 >سطوح دسترسی متفاوت </h1>
+                    <div class="item" >
+                        <h1  >سطوح دسترسی متفاوت </h1>
                         <img src="../style/images/user_login-512.png" class="center-block" style="height:250px;">
                         <p >مدیریت سطوح دسترسی اعضا در یک کانال و یک گروه برای مدیریت بهتر.</p>
                         <br><br>
                     </div>
 
-                    <div class="item">
-                        <h1> نظرسنجی و مسابقات </h1>
+                    <div class="item" >
+                        <h1 > نظرسنجی و مسابقات </h1>
                         <img src="../style/images/tablet_mobile_online_survey_questionnaire-512.png" class="center-block" style="height:250px;">
                         <p >برای بالابردن انگیزه کارکنان و تعامل و جمع آوری نظرات آن ها.</p>
                         <br><br>
                     </div>
-                    <div class="item">
-                        <h1>ایجاد کانال ها و گروه ها </h1>
+                    <div class="item" >
+                        <h1 >ایجاد کانال ها و گروه ها </h1>
                         <img src="../style/images/group.png" class="center-block" style="height:250px;">
                         <p >کانال ها و گروهایی با تعداد عضو بیش از 200 نفر برای ارتباط با یکدیگر.</p>
                         <br><br>
                     </div>
 
-                    <div class="item">
+                    <div class="item" style="transition: 0.1s ease-in-out left;">
                         <h1>ارتباط بااعضای سازمان </h1>
                         <img src="../style/images/networkingblack-512.png" class="center-block" style="height:250px;">
                         <p >همه ی اعضای یک سازمان میتوانند همیشه و به راحتی با هم ارتباط برقرار کنند.</p>
@@ -315,10 +322,10 @@
             <div class="text-center">
 
                 <a href="#carousel-example-generic"  class=" controllers" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <i class="fa fa-step-backward" aria-hidden="true"></i>
                 </a>
                 <a href="#carousel-example-generic"  class=" controllers" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <i class="fa fa-step-forward" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -346,18 +353,19 @@
     <footer class="navbar-default  nav-foot-color" id="_footer">
         <div class="container-fluid text-center ">
             <p style="direction: rtl;">تمامی حقوق سایت متعلق به ... می باشد.</p>
-            <a id="foorer_a_1" href="#fisrt_container">خانه</a>
-            <a id="foorer_a_2"href="#describe">درباره</a>
-            <a id="foorer_a_3"href="#why_us">چرا ما</a>
-            <a id="foorer_a_4"href="#downloads">دانلود</a>
-            <a  id="nav_a_2" href="#more_and_more">بیشتر و بیشتر</a>
-            <a id="foorer_a_5"href="#connect_to_us">ارتباط با ما</a>
+            <a href="#fisrt_container">خانه</a>
+            <a href="#describe">درباره</a>
+            <a href="#why_us">چرا ما</a>
+            <a href="#downloads">دانلود</a>
+            <a href="#more_and_more">بیشتر و بیشتر</a>
+            <a href="#connect_to_us">ارتباط با ما</a>
         </div>
     </footer>
     </div>
 
-</body>
-<script src="..\js\main.js"></script>
 
+
+<script src="../js/main.js"></script>
+</body>
 
 </html>

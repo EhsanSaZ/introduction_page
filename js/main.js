@@ -37,15 +37,13 @@ $(document).ready(function(){
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-
             // Store hash
             var hash = this.hash;
-
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top-$("#nav_bar").height()-10
-            }, 800, function(){});
+            }, 900, function(){});
         } // End if
     });
 });
@@ -57,9 +55,8 @@ document.onreadystatechange = function () {
         document.getElementById('contents').style.display="none";
     } else if (state == 'complete') {
         setTimeout(function(){
-            document.getElementById('interactive');
-            document.getElementById('load').style.display="none";
+            document.getElementById('loader-wrapper').style.display="none";
             document.getElementById('contents').style.display="block";
-        },1000);
+        },2000);
     }
 }

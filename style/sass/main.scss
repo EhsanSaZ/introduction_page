@@ -31,16 +31,21 @@ $blue:rgb(0,202,255);
   flex-direction: column;
 }
 
-.content{
-
-}
-body{
+#contents{
   background: url("../images/bg-download.jpg");;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+body{
+ /* background: url("../images/bg-download.jpg");;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
    font-family:  "B Yekan";
    font-size: 18px;
    nav#nav_bar{
@@ -97,7 +102,7 @@ body > div
 
 .nav-foot-color{
   a{
-    color: $my_green;
+    color:$light_green;
   }
   p{
     color: white;
